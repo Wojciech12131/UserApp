@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_shape"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="53dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_ekx" android:id="@+id/closeButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="test"/>
+        <View android:layout_width="match_parent"
+              android:layout_height="3dp"
+              android:background="@color/colorPrimary"
+              android:id="@+id/border1"
+              tools:layout_editor_absoluteX="4dp" android:layout_marginTop="0dp"
+              app:layout_constraintTop_toBottomOf="@+id/closeButton"/>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/border1">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnId">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Numer transakcji:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj id transakcji"
+                          android:id="@+id/trnId"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnDate"
+                          android:layout_below="@id/LinearLayout_trnId"
+                          android:layout_marginTop="3dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Data dokonania transakcji:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj data transakcji"
+                          android:id="@+id/trnData"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnType"
+                          android:layout_below="@id/LinearLayout_trnDate"
+                          android:layout_marginTop="3dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Typ transakcji:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj typ transakcji"
+                          android:id="@+id/trnType"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnPrice"
+                          android:layout_below="@id/LinearLayout_trnType"
+                          android:layout_marginTop="20dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Wartość koszyka:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj wartość koszyka"
+                          android:id="@+id/trnTotalPrice"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnDiscount"
+                          android:layout_below="@id/LinearLayout_trnPrice"
+                          android:layout_marginTop="3dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Wartość rabatu:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj wartość rabatu"
+                          android:id="@+id/trnDiscount"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnTotalPrice"
+                          android:layout_below="@id/LinearLayout_trnDiscount"
+                          android:layout_marginTop="3dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Suma:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj podsumowanie"
+                          android:id="@+id/finalPrice"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnGrantedPoints"
+                          android:layout_below="@id/LinearLayout_trnTotalPrice"
+                          android:layout_marginTop="20dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Zdobyto punktów:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj liczba zdobytych punktów"
+                          android:id="@+id/grantedPoints"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/LinearLayout_trnIssuedPoints"
+                          android:layout_below="@id/LinearLayout_trnGrantedPoints"
+                          android:layout_marginTop="3dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/black"
+                          android:text="Wydano punktów:"/>
+                <View android:layout_width="0dp" android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Tutaj wydane punkty"
+                          android:id="@+id/issuedPoints"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="20dp"
+                          android:layout_marginLeft="3dp"
+                          android:orientation="vertical"
+                          android:id="@+id/LinearLayout_TrnBasket"
+                          android:layout_below="@id/LinearLayout_trnIssuedPoints">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="KOSZYK"
+                          android:textColor="@color/colorPrimary"
+                          android:textSize="30dp"
+                          android:fontFamily="sans-serif"
+                />
+                <View android:layout_width="match_parent" android:layout_height="3dp"
+                      android:background="@color/colorPrimary"/>
+                <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+                                                           android:scrollbars="vertical"
+                                                           android:padding="4dp"
+                                                           android:id="@+id/basketList"
+                >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="20dp"
+                          android:layout_marginLeft="3dp"
+                          android:orientation="vertical"
+                          android:id="@+id/LinearLayout_TrnCoupons"
+                          android:layout_below="@id/LinearLayout_TrnBasket">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="KUPONY"
+                          android:textColor="@color/colorPrimary"
+                          android:textSize="30dp"
+                          android:fontFamily="sans-serif"
+                />
+                <View android:layout_width="match_parent" android:layout_height="3dp"
+                      android:background="@color/colorPrimary"/>
+                <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+                                                           android:scrollbars="vertical"
+                                                           android:padding="4dp"
+                                                           android:id="@+id/TrnCoupons"
+                >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

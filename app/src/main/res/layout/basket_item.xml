@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   app:cardCornerRadius="4dp"
+                                   android:layout_marginBottom="5dp">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Produkt"
+                  android:layout_marginStart="5dp"
+                  android:id="@+id/prdName"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="CENA X ILOść"
+                  android:layout_centerHorizontal="true"
+                  android:id="@+id/price_x_quantity"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="="
+                  android:layout_toRightOf="@id/price_x_quantity"
+                  android:layout_toLeftOf="@id/totalPrice"
+                  android:gravity="center"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:text="SUMA"
+
+                  android:id="@+id/totalPrice"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@+id/prdName"
+                  android:text="TO jest przykładowy opis przedmiotu"
+                  android:textSize="10dp"
+                  android:id="@+id/prdDescription"
+        />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

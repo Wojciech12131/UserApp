@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:id="@+id/usernameField"
+            android:drawableStart="@drawable/custom_username_icon"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:singleLine="true" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/username" android:autofillHints="" app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintBottom_toTopOf="@+id/emailField" android:layout_marginBottom="32dp"/>
+    <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:inputType="textShortMessage|text|textEmailAddress"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:id="@+id/emailField"
+            android:drawableStart="@drawable/custom_email_icon"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:singleLine="true" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/email" android:autofillHints="" app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintBottom_toTopOf="@+id/passwordField" android:layout_marginBottom="32dp"/>
+    <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:id="@+id/confirmPasswordField"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/confirm_password"
+            android:autofillHints=""
+            app:layout_constraintHorizontal_bias="0.495" android:layout_marginBottom="109dp"
+            app:layout_constraintBottom_toTopOf="@+id/registrationButton"/>
+    <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:id="@+id/passwordField"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/password"
+            android:autofillHints=""
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintBottom_toTopOf="@+id/confirmPasswordField" android:layout_marginBottom="32dp"/>
+    <Button
+            android:text="@string/registration"
+            android:layout_width="321dp"
+            android:background="@drawable/custom_register_button"
+            android:layout_height="45dp" android:id="@+id/registrationButton"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="44dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="44dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

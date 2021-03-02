@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/changePersonalData"
+          android:title="Edycja danych"/>
+    <item android:id="@+id/changePassword"
+          android:title="Zmiana hasła"/>
+    <item android:id="@+id/twoFactorAuthorizeSettings"
+          android:title="Ustawienia 2FA"/>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   app:cardCornerRadius="4dp"
+                                   android:layout_marginBottom="5dp">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="kod kuponu:"
+                  android:textColor="@color/black"
+
+                  android:id="@+id/kuponCodeText"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="KUPON_CODE"
+                  android:id="@+id/cpnNumber"
+                  android:layout_centerHorizontal="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Kupon użyto x razy"
+                  android:layout_centerHorizontal="true"
+                  android:layout_below="@+id/cpnNumber"
+                  android:id="@+id/trnCouponUseTime"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Użyto:"
+                  android:textColor="@color/black"
+                  android:layout_below="@+id/kuponCodeText"
+                  android:id="@+id/useTimeText"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Działanie:"
+                  android:textColor="@color/black"
+                  android:layout_below="@id/useTimeText"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="DETAILS"
+                  android:id="@+id/cpnDetails"
+                  android:layout_below="@+id/trnCouponUseTime"
+                  android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

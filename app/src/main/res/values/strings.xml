@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyUserApp</string>
+    <string name="logo">logo</string>
+    <string name="login">Logowanie</string>
+    <string name="registration">Rejestracja</string>
+    <string name="username">Nazwa użytkownika</string>
+    <string name="password">Hasło</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Powtórz hasło</string>
+    <string name="totpCode">TOTP</string>
+    <string name="enterTotpCode">Proszę podać aktualny kod</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="points_number">Liczba punktów:</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="using2FA">Dwuetapowe logowanie:</string>
+    <string name="cardsNumber">Numer karty:</string>
+    <string name="test">test@test.pl</string>
+    <string name="username_">Nazwa użytkownika:</string>
+    <string name="email_">Email:</string>
+    <string name="moja_karta_programu_lojalno_ciowego">Moja karta programu lojalnościowego:</string>
+    <string name="barcode">barcode</string>
+    <string name="settingsicon">settingsIcon</string>
+</resources>
